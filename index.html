@@ -31,13 +31,13 @@
 
       <!-- features start -->
       <div class="flex justify-center space-x-5 py-12">
-         <button id="show-history" class="btn px-8">Donation</button>
-         <button id="show-donation" class="btn px-8 btn-outline border-slate-200 border">History</button>
+         <button id="show-donation" class="btn px-8">Donation</button>
+         <button id="show-history" class="btn px-8 btn-outline border-slate-200 border">History</button>
       </div>
       <!-- features end -->
 
       <!-- donation start -->
-      <div class="max-w-6xl py-2 lg:py-8  mx-5 lg:mx-auto">
+      <div id="donate-section" class="max-w-6xl py-2 lg:py-8  mx-5 lg:mx-auto">
          <!-- Noakhali -->
          <div class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0">
             <!-- img  -->
@@ -122,21 +122,26 @@
             </div>
          </div>
 
-         <!-- Transactions start  -->
-         <div id="transactions-section" class="hidden">
-            <h2 class="text-3xl text-center ">Transactions History</h2>
-            <div id="transactions-container" class="space-y-3">
-
-            </div>
-           </div>
-          <!-- Transactions end -->
+         
 
       </div>
       <!-- donation end -->
 
+      <!-- Transactions start  -->
+      <div id="transaction-history" class="hidden">
+         <h2 class="text-3xl text-center ">Transactions History</h2>
+         <div id="transactions-container" class="space-y-3">
+
+         </div>
+        </div>
+       <!-- Transactions end -->
+
    </main>
 
    <footer class="bg-orange-100 h-40 mt-5"></footer>
+
+   <script src="./js/utilitiesDonate.js"></script>
+   <script src="./js/featuresDonate.js"></script>
 </body>
 
 </html>
