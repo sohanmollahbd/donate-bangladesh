@@ -11,22 +11,132 @@
 </head>
 
 <body>
-   <header class="">
-      <nav class="flex justify-between max-w-6xl  py-6 md:py-10 mx-5 lg:mx-auto">
-         <button class="btn btn-success hidden md:block">Blog</button>
+   <header class="bg-orange-100">
+      <nav class="flex items-center justify-between max-w-6xl pt-8 pb-6 md:pb-16 mx-5 lg:mx-auto sticky top-0">
+         <button class="btn bg-lime-400 px-8 text-xl hidden md:block">Blog</button>
          <div class="flex items-center space-x-3">
             <img src="./assets/logo.png" alt="">
             <span class="text-base md:text-xl font-bold">Donate Bangladesh</span>
          </div>
-         <div class="flex items-center space-x-3">
-            <img src="./assets/coin.png" alt="">
-            <span class="text-base md:text-xl	font-bold">5500 BDT</span>
+
+         <div class=" bg-orange-100 px-4 py-2">
+            <div class="stat flex ">
+               <img src="./assets/coin.png" alt="">
+               <div class="stat-value text-base md:text-xl font-bold">5500 BDT</div>
+            </div>
          </div>
       </nav>
    </header>
    <main>
 
+      <!-- features start -->
+      <div class="flex justify-center space-x-5 py-12">
+         <button id="show-history" class="btn px-8">Donation</button>
+         <button id="show-donation" class="btn px-8 btn-outline border-slate-200 border">History</button>
+      </div>
+      <!-- features end -->
+
+      <!-- donation start -->
+      <div class="max-w-6xl py-2 lg:py-8  mx-5 lg:mx-auto">
+         <!-- Noakhali -->
+         <div class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0">
+            <!-- img  -->
+            <img class="flex-1" src="./assets/noakhali.png" alt="noakhali flood">
+            <!-- contents -->
+            <div class="flex-1 space-y-6">
+               <div class="stats bg-zinc-100 rounded-md">
+                  <div class="stat flex items-center py-3 ">
+                     <img src="./assets/coin.png" alt="">
+                     <div class="stat-value text-slate-600 text-base font-normal">0 BDT</div>
+                  </div>
+               </div>
+
+               <h3 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+               <p class="text-base font-light text-slate-500"> The recent floods in Noakhali have caused significant
+                  damage to homes infrastructure. Your donation will help provide essential supplies and to those
+                  affected by this disaster. Every contribution, big or small, makes difference. Please join us in
+                  supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+               <br>
+               <form  class="space-y-7">
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
+                  <br>
+                  <button class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+               </form>
+            </div>
+         </div>
+
+         <!-- feni -->
+         <div class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12">
+            <!-- img  -->
+            <img class="flex-1" src="./assets/noakhali.png" alt="noakhali flood">
+            <!-- contents -->
+            <div class="flex-1 space-y-6">
+               <div class="stats bg-zinc-100 rounded-md">
+                  <div class="stat flex items-center py-3 ">
+                     <img src="./assets/coin.png" alt="">
+                     <div class="stat-value text-slate-600 text-base font-normal">0 BDT</div>
+                  </div>
+               </div>
+
+               <h3 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+               <p class="text-base font-light text-slate-500"> The recent floods in Noakhali have caused significant
+                  damage to homes infrastructure. Your donation will help provide essential supplies and to those
+                  affected by this disaster. Every contribution, big or small, makes difference. Please join us in
+                  supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+               <br>
+               <form class="space-y-7">
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
+                  <br>
+                  <button class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+               </form>
+            </div>
+         </div>
+
+         <!-- quota -->
+         <div class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12">
+            <!-- img  -->
+            <img class="flex-1" src="./assets/noakhali.png" alt="noakhali flood">
+            <!-- contents -->
+            <div class="flex-1 space-y-6">
+               <div class="stats bg-zinc-100 rounded-md">
+                  <div class="stat flex items-center py-3 ">
+                     <img src="./assets/coin.png" alt="">
+                     <div class="stat-value text-slate-600 text-base font-normal">0 BDT</div>
+                  </div>
+               </div>
+
+               <h3 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+               <p class="text-base font-light text-slate-500"> The recent floods in Noakhali have caused significant
+                  damage to homes infrastructure. Your donation will help provide essential supplies and to those
+                  affected by this disaster. Every contribution, big or small, makes difference. Please join us in
+                  supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+               <br>
+               <form class="space-y-7">
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
+                  <br>
+                  <button class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+               </form>
+            </div>
+         </div>
+
+         <!-- Transactions start  -->
+         <div id="transactions-section" class="hidden">
+            <h2 class="text-3xl text-center ">Transactions History</h2>
+            <div id="transactions-container" class="space-y-3">
+
+            </div>
+           </div>
+          <!-- Transactions end -->
+
+      </div>
+      <!-- donation end -->
+
    </main>
+
+   <footer class="bg-orange-100 h-40 mt-5"></footer>
 </body>
 
 </html>
