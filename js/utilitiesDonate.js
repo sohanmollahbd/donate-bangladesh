@@ -7,4 +7,5 @@ function showSectionById(id){
 
 // show the section with provide id as parameter 
 document.getElementById(id).classList.remove('hidden');
+
 }
