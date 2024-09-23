@@ -3,4 +3,4 @@ document.getElementById('show-donation').addEventListener('click',function(){
 })
 document.getElementById('show-history').addEventListener('click',function(){
    showSectionById('transaction-history');
-})
+});

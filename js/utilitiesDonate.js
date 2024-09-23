@@ -1,5 +1,4 @@
 // show section 
-
 function showSectionById(id){
    // hide all the section 
    document.getElementById('donate-section').classList.add('hidden');
@@ -9,3 +8,20 @@ function showSectionById(id){
 document.getElementById(id).classList.remove('hidden');
 
 }
+
+
+// get input field value by id 
+
+function getInputFieldValueById(id){
+   const inputValue = document.getElementById(id).value;
+   const inputNumber = parseFloat(inputValue);
+   return inputNumber;
+}
+
+// get text field value by id 
+function getInputFieldValueById(id){
+   const textValue = document.getElementById(id).value;
+   const textNumber = parseFloat(textValue);
+   return textNumber;
+}
+
