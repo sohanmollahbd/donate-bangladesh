@@ -26,7 +26,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click',function
      p.style.border = '1px solid black';
      p.style.padding = '40px';
      p.style.borderRadius = '10px'
-     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh
+     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Noakhali, Bangladesh
       ${transactionDate} 
      `;
     
@@ -116,7 +116,7 @@ document.getElementById('btn-donate-quota').addEventListener('click',function(ev
      p.style.border = '1px solid black';
      p.style.padding = '40px';
      p.style.borderRadius = '10px'
-     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh
+     p.innerText = ` ${addMoney} 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh
       ${transactionDate} 
      `;
     
