@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Donate Bangladesh</title>
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <style>
+      header {
+         position: sticky;
+         top: 0;
+      }
+   </style>
+</head>
+
+<body>
+   <header class="bg-orange-100">
+      <nav class="flex items-center justify-between max-w-6xl pt-8 pb-14 md:pb-16 mx-5 lg:mx-auto">
+         <button id="home-btn" class="btn bg-lime-400 px-8 text-xl ">Home</button>
+         <div class="flex items-center space-x-3 ms-5 md:ms-0">
+            <img src="./assets/logo.png" alt="">
+            <span class="text-base md:text-xl font-bold hidden md:block">Donate Bangladesh</span>
+         </div>
+
+         <div class=" bg-orange-100 px-4 py-2">
+            <div class="stat flex ">
+               <img src="./assets/coin.png" alt="">
+               <div id="account-balance" class="stat-value text-base md:text-xl font-bold">5500</div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main class="max-w-6xl mx-auto">
+
+      <h2 class="font-black text-2xl md:text-5xl mt-8 ps-5 lg:ps-0">Important FAQ ?</h2>
+      <!-- accordion  -->
+      <div class="join join-vertical w-full my-10">
+         <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Which is Document Object Model DOM?</div>
+            <div class="collapse-content">
+               <p>The <span class="font-bold">Document Object Model (DOM)</span>  is a programming interface for web documents.</p>
+            </div>
+         </div>
+         <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the dom?</div>
+            <div class="collapse-content">
+               <p>The <span class="font-bold">getElementById()</span> method of the Document interface returns an Element.</p>
+            </div>
+         </div>
+         <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom , why is it useful?</div>
+            <div class="collapse-content">
+               <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+            </div>
+         </div>
+         <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+               <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below,<span class="font-bold"> the onfocus event handler method is used to change the element's style when the user clicks inside it.</span>  When this event occurs, the element's background color will change to purple.</p>
+            </div>
+         </div>
+      </div>
+
+   </main>
+
+   <script>
+      // blog to home 
+      document.getElementById('home-btn').addEventListener('click', function () {
+         window.location.href = './index.html';
+      })
+   </script>
+
+   <script src="./js/utilitiesDonate.js"></script>
+   <script src="./js/featuresDonate.js"></script>
+</body>
+
+</html>

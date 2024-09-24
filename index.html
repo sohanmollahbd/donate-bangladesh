@@ -7,13 +7,23 @@
    <title>Donate Bangladesh</title>
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
-
+   
+   <style>
+      header {
+         position: sticky;
+         top : 0;
+      }
+      #features {
+         position: sticky;
+         top: 60px;
+      }
+   </style>
 </head>
 
 <body>
    <header class="bg-orange-100">
-      <nav class="flex items-center justify-between max-w-6xl pt-8 pb-6 md:pb-16 mx-5 lg:mx-auto">
-         <button class="btn bg-lime-400 px-8 text-xl ">Blog</button>
+      <nav class="flex items-center justify-between max-w-6xl pt-8 pb-14 md:pb-16 mx-5 lg:mx-auto">
+         <button id="blog-btn" class="btn bg-lime-400 px-8 text-xl ">Blog</button>
          <div class="flex items-center space-x-3 ms-5 md:ms-0">
             <img src="./assets/logo.png" alt="">
             <span class="text-base md:text-xl font-bold hidden md:block">Donate Bangladesh</span>
@@ -30,7 +40,7 @@
    <main>
 
       <!-- features start -->
-      <div class="flex justify-center space-x-5 py-12">
+      <div id="features" class="flex justify-center space-x-5 py-12">
          <button id="show-donation" class="btn px-8">Donation</button>
          <button id="show-history" class="btn px-8 btn-outline border-slate-200 border">History</button>
       </div>
@@ -144,6 +154,8 @@
 
    <footer class="bg-orange-100 h-40 mt-5"></footer>
 
+
+   
    <script src="./js/utilitiesDonate.js"></script>
    <script src="./js/addMoney.js"></script>
    <script src="./js/featuresDonate.js"></script>
