@@ -22,13 +22,15 @@ document.getElementById('btn-donate-noakhali').addEventListener('click',function
 
       // add to transaction history
       const p = document.createElement('p');
-      p.style.border = '1px solid black';
-      p.style.padding = '40px';
-      p.style.borderRadius = '10px'
-      p.innerText = ` ${addMoney} Taka is Donated for Flood-2024 at Noakhali, Bangladesh`;
-
-      document.getElementById('transactions-container').appendChild(p);
-
+     let transactionDate = new Date();
+     p.style.border = '1px solid black';
+     p.style.padding = '40px';
+     p.style.borderRadius = '10px'
+     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh
+      ${transactionDate} 
+     `;
+    
+     document.getElementById('transactions-container').appendChild(p);
      
     }
     else{
@@ -64,12 +66,16 @@ document.getElementById('btn-donate-feni').addEventListener('click',function(eve
 
      // add to transaction history
      const p = document.createElement('p');
+     let transactionDate = new Date();
      p.style.border = '1px solid black';
      p.style.padding = '40px';
      p.style.borderRadius = '10px'
-     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh`;
-
+     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh
+      ${transactionDate} 
+     `;
+    
      document.getElementById('transactions-container').appendChild(p);
+
 
     
    }
@@ -106,13 +112,15 @@ document.getElementById('btn-donate-quota').addEventListener('click',function(ev
 
      // add to transaction history
      const p = document.createElement('p');
+     let transactionDate = new Date();
      p.style.border = '1px solid black';
      p.style.padding = '40px';
      p.style.borderRadius = '10px'
-     p.innerText = `${addMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
-
+     p.innerText = ` ${addMoney} Taka is Donated for Flood Relief-2024 at Feni, Bangladesh
+      ${transactionDate} 
+     `;
+    
      document.getElementById('transactions-container').appendChild(p);
-
     
    }
    else{
