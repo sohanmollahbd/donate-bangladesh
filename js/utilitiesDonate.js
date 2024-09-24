@@ -14,14 +14,16 @@ document.getElementById(id).classList.remove('hidden');
 
 function getInputFieldValueById(id){
    const inputValue = document.getElementById(id).value;
+   // console.log(id)
    const inputNumber = parseFloat(inputValue);
+   
    return inputNumber;
 }
 
 // get text field value by id 
-function getInputFieldValueById(id){
-   const textValue = document.getElementById(id).value;
+
+function getTextFieldValueById(id){
+   const textValue = document.getElementById(id).innerText;
    const textNumber = parseFloat(textValue);
    return textNumber;
 }
-

@@ -22,7 +22,7 @@
          <div class=" bg-orange-100 px-4 py-2">
             <div class="stat flex ">
                <img src="./assets/coin.png" alt="">
-               <div class="stat-value text-base md:text-xl font-bold">5500 BDT</div>
+               <div id="account-balance" class="stat-value text-base md:text-xl font-bold">5500</div>
             </div>
          </div>
       </nav>
@@ -47,7 +47,7 @@
                <div class="stats bg-zinc-100 rounded-md">
                   <div class="stat flex items-center py-3 ">
                      <img src="./assets/coin.png" alt="">
-                     <div class="stat-value text-slate-600 text-base font-normal">0 BDT</div>
+                     <div id="account-balance-noakhali" class="stat-value text-slate-600 text-base font-normal">0</div>
                   </div>
                </div>
 
@@ -58,10 +58,10 @@
                   supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                <br>
                <form class="space-y-7">
-                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                  <input id="input-add-money-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
                   <br>
-                  <button class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button id="btn-donate-noakhali" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
@@ -134,7 +134,7 @@
       <!-- Transactions start  -->
       <div id="transaction-history" class="hidden">
          <h2 class="text-3xl text-center ">Transactions History</h2>
-         <div id="transactions-container" class="space-y-3">
+         <div id="transactions-container" class="space-y-3 text-center max-w-6xl mx-auto mt-5">
 
          </div>
       </div>
@@ -145,6 +145,7 @@
    <footer class="bg-orange-100 h-40 mt-5"></footer>
 
    <script src="./js/utilitiesDonate.js"></script>
+   <script src="./js/addMoney.js"></script>
    <script src="./js/featuresDonate.js"></script>
 </body>
 
