@@ -71,7 +71,7 @@
                   <input id="input-add-money-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
                   <br>
-                  <button id="btn-donate-noakhali" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-noakhali" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
@@ -79,7 +79,7 @@
          <!-- feni -->
          <div id="add-money-feni" class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
             <!-- img  -->
-            <img class="flex-1" src="./assets/feni.png" alt="noakhali flood">
+            <img class="flex-1" src="./assets/feni.png" alt="Feni flood">
             <!-- contents -->
             <div class="flex-1 space-y-6">
                <div class="stats bg-zinc-100 rounded-md">
@@ -101,7 +101,7 @@
                   <input id="input-add-money-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
                   <br>
-                  <button id="btn-donate-feni" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-feni" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
@@ -109,7 +109,7 @@
          <!-- quota -->
          <div id="add-money-quota" class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
             <!-- img  -->
-            <img class="flex-1" src="./assets/quota-protest.png" alt="noakhali flood">
+            <img class="flex-1" src="./assets/quota-protest.png" alt="Quota Reform Protest">
             <!-- contents -->
             <div class="flex-1 space-y-6">
                <div class="stats bg-zinc-100 rounded-md">
@@ -131,7 +131,7 @@
                   <input id="input-add-money-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
                   <br>
-                  <button id="btn-donate-quota" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-quota" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
@@ -149,13 +149,30 @@
          </div>
       </div>
       <!-- Transactions end -->
+       
+
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box text-center">
+         <h3 class="text-5xl font-bold">Congrats!</h3>
+         <img class="mx-auto mt-5" src="./assets/coin.png" alt="">
+         <p class="py-4">You have Donated for Humankind</p>
+         <p class="text-2xl font-bold">Successfully</p>
+         <div class="modal-action justify-center">
+            <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close confirmation</button>
+            </form>
+         </div>
+      </div>
+      </dialog>
 
    </main>
 
    <footer class="bg-orange-100 h-40 mt-5"></footer>
 
 
-   
+
    <script src="./js/utilitiesDonate.js"></script>
    <script src="./js/addMoney.js"></script>
    <script src="./js/featuresDonate.js"></script>

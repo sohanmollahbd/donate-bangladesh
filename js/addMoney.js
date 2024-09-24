@@ -62,8 +62,8 @@ document.getElementById('btn-donate-feni').addEventListener('click',function(eve
      const accountBalanceFeniNumber = parseFloat(accountBalanceFeni);
      const newBalanceFeni = accountBalanceFeniNumber + addMoney;
 
-     document.getElementById('account-balance-feni').innerText = newBalanceFeni;
-
+     const feni = document.getElementById('account-balance-feni');
+     feni.innerText =`${newBalanceFeni} BDT` 
      // add to transaction history
      const p = document.createElement('p');
      let transactionDate = new Date();
