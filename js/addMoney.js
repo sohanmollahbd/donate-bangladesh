@@ -125,6 +125,7 @@ document.getElementById('btn-donate-quota').addEventListener('click',function(ev
    }
    else{
      alert('Failed to donate money!')
+     return;
    }
  }
 

@@ -7,15 +7,19 @@
    <title>Donate Bangladesh</title>
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
-   
+
    <style>
       header {
          position: sticky;
-         top : 0;
+         top: 0;
       }
+
       #features {
          position: sticky;
          top: 60px;
+      }
+      .btn-active:active{
+         background-color: lime;
       }
    </style>
 </head>
@@ -49,7 +53,8 @@
       <!-- donation start -->
       <div id="donate-section" class="max-w-6xl py-2 lg:py-8  mx-5 lg:mx-auto">
          <!-- Noakhali -->
-         <div id="add-money-noakhali" class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 border p-7 rounded-2xl">
+         <div id="add-money-noakhali"
+            class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 border p-7 rounded-2xl">
             <!-- img  -->
             <img class="flex-1" src="./assets/noakhali.png" alt="noakhali flood">
             <!-- contents -->
@@ -68,16 +73,19 @@
                   supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                <br>
                <form class="space-y-7">
-                  <input id="input-add-money-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                  <input id="input-add-money-noakhali" type="text" placeholder="Write Donation Amount"
+                     class="input input-bordered w-full" />
 
                   <br>
-                  <button onclick="my_modal_5.showModal()" id="btn-donate-noakhali" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-noakhali"
+                     class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
 
          <!-- feni -->
-         <div id="add-money-feni" class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
+         <div id="add-money-feni"
+            class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
             <!-- img  -->
             <img class="flex-1" src="./assets/feni.png" alt="Feni flood">
             <!-- contents -->
@@ -98,16 +106,19 @@
                   in urgent need.</p>
                <br>
                <form class="space-y-7">
-                  <input id="input-add-money-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                  <input id="input-add-money-feni" type="text" placeholder="Write Donation Amount"
+                     class="input input-bordered w-full" />
 
                   <br>
-                  <button onclick="my_modal_5.showModal()" id="btn-donate-feni" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-feni"
+                     class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
 
          <!-- quota -->
-         <div id="add-money-quota" class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
+         <div id="add-money-quota"
+            class="flex flex-col lg:flex-row space-x-5 space-y-5 lg:space-y-0 mt-12 border p-7 rounded-2xl">
             <!-- img  -->
             <img class="flex-1" src="./assets/quota-protest.png" alt="Quota Reform Protest">
             <!-- contents -->
@@ -128,10 +139,12 @@
                   consider making a donation to support these brave individuals in their time of need.</p>
                <br>
                <form class="space-y-7">
-                  <input id="input-add-money-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                  <input id="input-add-money-quota" type="text" placeholder="Write Donation Amount"
+                     class="input input-bordered w-full" />
 
                   <br>
-                  <button onclick="my_modal_5.showModal()" id="btn-donate-quota" class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
+                  <button onclick="my_modal_5.showModal()" id="btn-donate-quota"
+                     class="btn bg-lime-400 px-8 text-xl w-full">Donate Now</button>
                </form>
             </div>
          </div>
@@ -149,22 +162,22 @@
          </div>
       </div>
       <!-- Transactions end -->
-       
+
 
       <!-- Open the modal using ID.showModal() method -->
       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-      <div class="modal-box text-center">
-         <h3 class="text-5xl font-bold">Congrats!</h3>
-         <img class="mx-auto mt-5" src="./assets/coin.png" alt="">
-         <p class="py-4">You have Donated for Humankind</p>
-         <p class="text-2xl font-bold">Successfully</p>
-         <div class="modal-action justify-center">
-            <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close confirmation</button>
-            </form>
+         <div class="modal-box text-center">
+            <h3 class="text-5xl font-bold">Congrats!</h3>
+            <img class="mx-auto mt-5" src="./assets/coin.png" alt="">
+            <p class="py-4">You have Donated for Humankind</p>
+            <p class="text-2xl font-bold">Successfully</p>
+            <div class="modal-action justify-center">
+               <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close confirmation</button>
+               </form>
+            </div>
          </div>
-      </div>
       </dialog>
 
    </main>
